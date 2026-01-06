@@ -17,14 +17,14 @@ VLAN Design
 | 40 | IT | IT support and management |
 
 IP Addressing
-The network uses the private address block **192.168.10.0/24**, subnetted using VLSM to meet departmental host requirements.
+The network uses the private address block 192.168.10.0/24, subnetted using VLSM to meet departmental host requirements.
 
 Each VLAN is assigned a dedicated subnet, and the default gateway for each VLAN is configured on a router subinterface.
 
 Detailed IP information is available in the 'ip-addressing table' down below.
 
 Inter-VLAN Routing
-Inter-VLAN routing is implemented using **Router-on-a-Stick**:
+Inter-VLAN routing is implemented using Router-on-a-Stick:
 - A single router interface is configured with multiple subinterfaces
 - Each subinterface is associated with a VLAN using IEEE 802.1Q encapsulation
 - The router serves as the default gateway for all VLANs
